@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/CAMBIAR%20URL/static/css/main.67db64dc.css",
+    "main.js": "/CAMBIAR%20URL/static/js/main.fbbd9a74.js",
+    "static/js/453.e823b4a7.chunk.js": "/CAMBIAR%20URL/static/js/453.e823b4a7.chunk.js",
+    "static/media/LeagueSpartan-VariableFont_wght.ttf": "/CAMBIAR%20URL/static/media/LeagueSpartan-VariableFont_wght.373d611ec44856608b96.ttf",
+    "static/media/PixelGame.otf": "/CAMBIAR%20URL/static/media/PixelGame.a7040ee1df82fd46813b.otf",
+    "index.html": "/CAMBIAR%20URL/index.html",
+    "main.67db64dc.css.map": "/CAMBIAR%20URL/static/css/main.67db64dc.css.map",
+    "main.fbbd9a74.js.map": "/CAMBIAR%20URL/static/js/main.fbbd9a74.js.map",
+    "453.e823b4a7.chunk.js.map": "/CAMBIAR%20URL/static/js/453.e823b4a7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67db64dc.css",
+    "static/js/main.fbbd9a74.js"
+  ]
+}
