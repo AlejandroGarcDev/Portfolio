@@ -7,7 +7,7 @@ export const globalVariables = {
     url_github: 'github.com/AlejandroGarcDev',
     url_linkedin: 'www.linkedin.com/in/alejandro-garc%C3%ADa-santiago/',
     url_youtube: 'www.youtube.com/@intentodedesarrollador',
-    url_mailto: 'www.gmail.com'
+    url_mailto: 'mailto:alejandro.garc.sant@gmail.com'
 }
 
 export const tagColors= {
