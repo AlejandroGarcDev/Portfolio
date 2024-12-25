@@ -1,7 +1,7 @@
 {
   "name": "modular_portfolio",
   "version": "0.1.0",
-  "homepage": "CAMBIAR URL",
+  "homepage": "https://AlejandroGarcDev.github.io/Portfolio",
   "private": false,
   "dependencies": {
     "@cascadia-code/scroll-to-hash-element": "^2.0.3",

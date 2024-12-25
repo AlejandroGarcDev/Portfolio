@@ -61,6 +61,15 @@ const Project: React.FC<ProjectModel> = (project) => {
                         ></iframe>
                     </div>
             }
+            {
+                project.youtube_url2 &&
+                    <div className='video_wrapper'>
+                        <iframe title={project.title}   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowFullScreen
+                            src={`https://www.youtube.com/embed/${project.youtube_url2.split("v=")[1]}`}
+                        ></iframe>
+                    </div>
+            }
         </div>
     );
 };

@@ -1,12 +1,12 @@
 import { CareerElementModel, ProjectModel, SkillGroupModel } from "./models"
 
 export const globalVariables = {
-    name: 'Name',
-    my_description: 'Hi there and thanks for stopping by! This is the description of my repo.',
+    name: 'Alejandro Garcia',
+    my_description: 'Hi there and thanks for stopping by!',
     my_photo: 'default_avatar.jpg',
-    url_github: 'www.github.com',
-    url_linkedin: 'www.linkedin.com',
-    url_youtube: 'www.youtube.com',
+    url_github: 'github.com/AlejandroGarcDev',
+    url_linkedin: 'www.linkedin.com/in/alejandro-garc%C3%ADa-santiago/',
+    url_youtube: 'www.youtube.com/@intentodedesarrollador',
     url_mailto: 'www.gmail.com'
 }
 
@@ -18,138 +18,92 @@ export const tagColors= {
 };
 
 export const projects: ProjectModel[] = [
-    {   //Full project
-        title: "Full project",
-        img_url: `${process.env.PUBLIC_URL}/logo192.png`,
-        date: "01/10/24",
-        category: ["Games", "AI"],
-        languages: ["C", "Python"],
-        description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?",
-        quotes: ["Inspiring quote here", "The best project ever"],
-        engine: "React",
-        github_url: "https://github.com/example",
-        doc_url: "https://docs.example.com",
-        project_url: "https://project.example.com",
-        youtube_url: "https://www.youtube.com/watch?v=c0-hvjV2A5Y"
+    {   //First Project
+        title: "Multiplayer Shooter C++, Unreal Engine",
+        img_url: `${process.env.PUBLIC_URL}/MultiplayerShooterIcon.png`,
+        category: ["Games"],
+        languages: ["C++"],
+        description: "During this project I have learned how the different machines that make up a multiplayer session communicate with each other in C++, as well as how to manipulate variables and functions so that they are updated or executed either locally, only on the server, or on all connected machines. Also, I have learnt techniques that allow a better user experience and minimize the impact of a bad connection. An example could be recording the position of the players during a period of time on the server, this way client send information to the server and also the time when that happened in client version and server can verify that action. Project made by Udemy course",
+        quotes: ["Learning the process of an online game in Unreal Engine"],
+        engine: "Unreal Engine",
+        github_url: "https://github.com/AlejandroGarcDev/UdemyShooterOnline",
+        youtube_url: "https://www.youtube.com/watch?v=opTjqYuNkBw",
+        youtube_url2: "https://www.youtube.com/watch?v=94xmjz9n1wU"
     },
-    {   //Minimun content project
-        title: "Minimun project1",
-        img_url: "https://example.com/image.jpg",
-        date: "05/10/23",
-        category: ["Web Development"],
-        languages: ["JavaScript", "TypeScript"],
-        description: "An example project description",
+    {   //Second Project
+        title: "Ray Tracing Project",
+        img_url: `${process.env.PUBLIC_URL}/RayTracingIcon.png`,
+        category: ["Simulation"],
+        languages: ["C++"],
+        description: "Simple Ray Tracing project in which I have learned basic ray tracing and multi-threads techniques. Project made following TheCherno channel tutorials ",
+        github_url: "https://github.com/AlejandroGarcDev/RayTracingTheChernoC--",
+        youtube_url: "https://www.youtube.com/watch?v=1TLjxCJFhSk",
     },
-    {   //Minimun content project
-        title: "Minimun project",
-        img_url: "https://example.com/image.jpg",
-        date: "05/10/23",
-        category: ["Web Development"],
-        languages: ["JavaScript", "TypeScript"],
-        description: "An example project description",
+    {   //Third Project
+        title: "Multiplayer Survival With Blueprints, Unreal Engine",
+        img_url: `${process.env.PUBLIC_URL}/SurvivalIcon.png`,
+        category: ["Games"],
+        languages: ["Blueprints"],
+        engine: "Unreal Engine",
+        description: "Complete survival project made with Unreal Engine blueprints. During this project I have learned differents aspect of a survival game like construction and craft systems, characters experience and parameters of a player like stamina or health.",
+        github_url: "https://github.com/AlejandroGarcDev/SurvivalGame_Course",
+        youtube_url: "https://www.youtube.com/watch?v=i5WWwgCHzco",
+    
     },
-    {   //Minimun content project
-        title: "Minimun project2",
-        img_url: "https://example.com/image.jpg",
-        date: "05/10/23",
-        category: ["Web Development"],
-        languages: ["JavaScript", "TypeScript"],
-        description: "An example project description",
+    {   //Fourth Project
+        title: "Materials & Particle Systems With Niagara, Unreal Engine",
+        img_url: `${process.env.PUBLIC_URL}/ParticleSystemsIcon.png`,
+        category: ["Games"],
+        languages: ["Blueprints", "HLSL"],
+        engine: "Unreal Engine",
+        description: "This is a combination of different courses about particle systems in which I have learned to manipulate particles according to parameters both inherent to the particles (such as their lifetime) and parameters created from scratch (such as the distance to an object).",
+        youtube_url: "https://www.youtube.com/watch?v=IDwlrLAYCcA"
     },
-    {   //Minimun content project
-        title: "Minimun project3",
-        img_url: "https://example.com/image.jpg",
-        date: "05/10/23",
-        category: ["Web Development"],
-        languages: ["JavaScript", "TypeScript"],
-        description: "An example project description",
+    {   //Fifth Project
+        title: "Personal Project",
+        img_url: `${process.env.PUBLIC_URL}/PersonalProjectIcon.png`,
+        category: ["Games"],
+        languages: ["Blueprints"],
+        engine: "Unreal Engine",
+        description: "Thriller game created from the final project of the Unreal Engine course. In the game, core game mechanic is exploring on the computer, so after making this game I have improved the knowledge making UI (widgets) and how to manage information to communicate between different widgets. Still in progress.",
     },
-    {   //Minimun content project
-        title: "Minimun project4",
-        img_url: "https://example.com/image.jpg",
-        date: "05/10/23",
-        category: ["Web Development"],
-        languages: ["JavaScript", "TypeScript"],
-        description: "An example project description",
-    }
 ];
 
 export const workElements: CareerElementModel[] = [
     {
-        title: "Company I was working on",
-        start_date: "2022",
-        end_date: "July 2023",
-        role: "Internship",
-        location: "A great place to work, Remote",
-        description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-    },
-    {
-        title: "My new company",
+        title: "Hidramar: Estimation Engineer",
         start_date: "2023",
-        end_date: "Present",
-        role: "CEO",
-        location: "My city",
-        description: "Consequatur aut perferendis doloribus asperiores repellat."
-    }
+        end_date: "2024",
+        role: "",
+        location: "",
+        description: "My first job after finishing my degree in telecommunications engineering was at Hidramar, a shipyard in the port of my hometown, Las Palmas de Gran Canaria. My job consisted of making offers according to the client's requests and, depending on the offer, the parties involved in it. During my time at Hidramar I improved my teamwork and communication skills because we had to spend a lot of the time transferring information between colleagues and people from other companies."
+    },
 ]
 export const studyElements: CareerElementModel[] = [
     {
-        title: "Computer Science Degree",
-        start_date: "2018",
-        end_date: "2022",
-        location: "Harvard University",
-        description: "I studied hard for my degree."
+        title: "Engineering in Telecommunications",
+        start_date: "ULPGC-Las Palmas de Gran Canaria",
+        end_date: "2023",
+        location: "Universidad de Las Palmas de Gran Canaria",
+        description: "During my time at university I learned a lot about mathematics and physics, especially about waveforms and their time-frequency spectral relationship. I specialized in telecommunications systems because I was intrigued to know how different communication systems works. However, when I finished my degree, I realized that what I wanted to do was get into the video game industry."
     },
     {
-        title: "A course i did",
-        start_date: "January 2023",
-        end_date: "October 2023",
-        location: "A great courses page",
-        description: "Learned all i know in this course."
-    }
+        title: "Videogame programming course with Unreal Engine",
+        start_date: "Tokio School",
+        end_date: "2024",
+        location: "Tokio School",
+        description: "Introductory course to learn all the different aspects that cover a video game development focused on the Unreal Engine graphics engine. During the course I learned most of the tools that Unreal offers to develop a video game, in addition to getting started in the field of C++ programming."
+    },
 ]
 
 export const skillsElements: SkillGroupModel[] = [
     {
-        title: "Programming Languages",
+        title: "Tools",
         skills: [
-            {
-                language_name: 'JavaScript',
-                proficiency: 95
-            },
             {
                 language_name: 'C++',
-                proficiency: 33
-            },
-            {
-                language_name: 'C',
-                proficiency: 99
-            },
-            {
-                language_name: 'PHP',
-                proficiency: 12
-            },
-            {
-                language_name: 'R',
-                proficiency: 1
-            },
-        ]
-    },
-    {
-        title: "Databases",
-        skills: [
-            {
-                language_name: 'MySQL',
-                proficiency: 12
-            },
-            {
-                language_name: 'PostgreSQL',
-                proficiency: 78
-            },
-            {
-                language_name: 'MariaDB',
-                proficiency: 44
-            },
+                icon_url: `${process.env.PUBLIC_URL}/PersonalProjectIcon.png`,
+            }
         ]
     }
 ]

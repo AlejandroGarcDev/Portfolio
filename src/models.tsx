@@ -6,7 +6,7 @@ export interface CodeAreaModel {
 export interface ProjectModel {
     title: string,
     img_url: string,
-    date: string,       /* Date format: DD/MM/YY */
+    date?: string,       /* Date format: DD/MM/YY */
     category: string[],
     languages: string[],
     description: string,
@@ -16,6 +16,7 @@ export interface ProjectModel {
     doc_url?: string,
     project_url?: string,
     youtube_url?: string,
+    youtube_url2?: string,
 }
 
 export interface TagModel{
@@ -25,7 +26,7 @@ export interface TagModel{
 
 export interface CareerElementModel{
     title: string,
-    start_date: string,
+    start_date?: string,
     end_date: string,
     location: string,
     role?: string,
@@ -34,7 +35,7 @@ export interface CareerElementModel{
 
 export interface SkillModel{
     language_name: string,
-    proficiency: number
+    icon_url: string
 }
 export interface SkillGroupModel{
     title: string,
