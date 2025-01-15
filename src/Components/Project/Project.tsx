@@ -5,6 +5,8 @@ import Tag from './Tag';
 import { Link
 
  } from 'react-router-dom';
+import React from "react";
+
 const Project: React.FC<ProjectModel> = (project) => {
     
         const date = project.date;
@@ -49,7 +51,12 @@ const Project: React.FC<ProjectModel> = (project) => {
             </div>
             <div className='project_description'>
                 <p>
-                    {project.description}
+                    {project.description.split("\n").map((line: string, index: number) => (
+                        <React.Fragment key={index}>
+                            {line}
+                            <br />
+                        </React.Fragment>
+                    ))}
                 </p>
             </div>
             {

@@ -26,11 +26,19 @@ const Layout: React.FC = () => {
             { globalVariables.url_github   && <a className="icon" target="_blank" rel="noreferrer" href={'http://' + globalVariables.url_github}><FaGithub></FaGithub></a> }
             { globalVariables.url_youtube  && <a className="icon" target="_blank" rel="noreferrer" href={'http://' + globalVariables.url_youtube}><FaYoutube></FaYoutube></a> }
             { globalVariables.url_linkedin && <a className="icon" target="_blank" rel="noreferrer" href={'http://' + globalVariables.url_linkedin}><FaLinkedin></FaLinkedin></a> }
-            { globalVariables.url_mailto   && <a className="icon" target="_blank" rel="noreferrer" href={'http://' + globalVariables.url_mailto}><IoIosMail></IoIosMail></a> }
+            { globalVariables.url_mailto && <a className="icon" target="_blank" rel="noreferrer" href={'mailto:' + globalVariables.url_mailto}><IoIosMail></IoIosMail></a> }
+
           </div>
         </section>
         <section>
-          <p>{globalVariables.my_description}</p>
+          <p style={{ textAlign: "justify" }}>
+           {globalVariables.my_description.split("\n").map((line: string, index: number) => (
+            <React.Fragment key={index}>
+             {line}
+              <br />
+            </React.Fragment>
+            ))}
+          </p>
         </section>
         <section>
           <div className='button_group'>
